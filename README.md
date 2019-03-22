@@ -2,10 +2,15 @@
 Stock prediction project
 <br>
 Open: 9:30am opening price
+<br>
 High: Highest price 9:30 - 4pm
+<br>
 Close: 4pm closing price
+<br>
 Volume: How many shares that were traded on that day
+<br>
 Dividend: Accounts for profit given back to share holders
+<br>
 Split: Split one stock into multiple stocks
 
 # External Sources
