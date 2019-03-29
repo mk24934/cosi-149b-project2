@@ -17,3 +17,5 @@ Split: Split one stock into multiple stocks
 'https://medium.com/mlreview/a-simple-deep-learning-model-for-stock-price-prediction-using-tensorflow-30505541d877'
 
 'https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html'
+
+'https://www.datacamp.com/community/tutorials/lstm-python-stock-market'
