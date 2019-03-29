@@ -12,4 +12,4 @@ dfs = dict(tuple(df.groupby('id')))
 list_df = [dfs[x] for x in dfs]
 for index, df in enumerate(list_df):
     df['moving_average'] = df['adjusted_close'].rolling(5).mean()
-    df.to_csv("data_by_id/" + str(index) + ".csv")
+    df.to_csv("data_by_id/" + str(index) + ".csv", index=False)
