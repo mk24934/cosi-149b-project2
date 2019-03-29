@@ -5,12 +5,12 @@ import pandas as pd
 df = pd.read_csv('training_project2.csv')
 
 # Drop date variable
-data = df.drop(columns=['open', 'high', 'low', 'close', 'volume', 'dividend', 'split'])
-
-data['moving_average'] = data['adjusted_close'].rolling(5).mean()
+df = df.drop(columns=['open', 'high', 'low', 'close', 'volume', 'dividend', 'split'])
 
 # Split data by IDs and write to different files
-last_row = df.tail(1)
-last_id = last_row['id']
-print(last_id)
-# for index, row in df.iterrows():
+unique_ids = df.id.unique()
+for id in unique_ids:
+    df_new = "df" + str(id)
+    exec('{} = df[df["id"] == id]'.format(df_new))
+    df_new.to_csv(str(id) + ".csv", sep='\t')
+    # df_new['moving_average'] = df['adjusted_close'].rolling(5).mean()
