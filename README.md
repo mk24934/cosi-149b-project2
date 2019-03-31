@@ -19,3 +19,5 @@ Split: Split one stock into multiple stocks
 'https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html'
 
 'https://www.datacamp.com/community/tutorials/lstm-python-stock-market'
+
+'https://blog.usejournal.com/stock-market-prediction-by-recurrent-neural-network-on-lstm-model-56de700bff68'
