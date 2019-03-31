@@ -7,6 +7,9 @@ df = pd.read_csv('training_project2.csv')
 # Drop date variable
 df = df.drop(columns=['open', 'high', 'low', 'close', 'volume', 'dividend', 'split'])
 
+# Checking dataset
+# print(df[df['id'] == 11477]['id'])
+
 # Split data by IDs and write to different files
 dfs = dict(tuple(df.groupby('id')))
 list_df = [dfs[x] for x in dfs]
